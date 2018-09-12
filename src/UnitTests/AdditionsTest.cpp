@@ -19,3 +19,9 @@ TEST(Additionstest, ZweiUndZwei)
 	ASSERT_EQ( 2+2, 4 );
 	ASSERT_NE( 2+2, 2 );
 }
+
+TEST(Additionstest, EinsUndZwei)
+{
+	ASSERT_EQ( 1+2, 4 );
+	ASSERT_NE( 1+2, 2 );
+}
