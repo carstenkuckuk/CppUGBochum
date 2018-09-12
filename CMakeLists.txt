@@ -12,6 +12,16 @@ install(
 	COMPONENT Applications
 )
 
+INCLUDE_DIRECTORIES(
+	libs/gtest-1.7.0/include
+	libs/gtest-1.7.0
+)
+
+add_executable(UnitTests 
+	src/UnitTests/UnitTestsMain.cpp
+	src/UnitTests/AdditionsTest.cpp
+	libs/gtest-1.7.0/src/gtest-all.cc
+)
 ########################################
 ###
 ###  Installers for Windows (NSIS) and

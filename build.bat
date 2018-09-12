@@ -18,14 +18,19 @@ cmake --build . --config Release
 if %ERRORLEVEL% NEQ 0 GOTO :FEHLER
 popd
 
+ECHO STEP 5: Execute Unit Tests
+pushd working\bin\Release
+UnitTests.exe --gtest_output=xml:MfcUnitTests.xml
+popd
 
-ECHO STEP 5: Create Setup using NSIS 64 Bit
+
+ECHO STEP 6: Create Setup using NSIS 64 Bit
 pushd working
 cpack -G NSIS64
 if %ERRORLEVEL% NEQ 0 GOTO :FEHLER
 popd
 
-ECHO STEP 6: Copy Setup program to top of the repository
+ECHO STEP 7: Copy Setup program to top of the repository
 copy /Y working\CppUGBochum-1.2.3-win64.exe .
 
 
