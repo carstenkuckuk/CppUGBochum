@@ -20,7 +20,7 @@ popd
 
 ECHO STEP 5: Execute Unit Tests
 pushd working\bin\Release
-UnitTests.exe --gtest_output=xml:MfcUnitTests.xml
+UnitTests.exe --gtest_output=xml:UnitTests.xml
 popd
 
 
