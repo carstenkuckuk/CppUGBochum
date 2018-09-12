@@ -22,6 +22,12 @@ TEST(Additionstest, ZweiUndZwei)
 
 TEST(Additionstest, EinsUndZwei)
 {
-	ASSERT_EQ( 1+2, 4 );
-	ASSERT_NE( 1+2, 2 );
+	ASSERT_EQ( 1+2, 3 );
+	ASSERT_NE( 1+2, 4 );
+}
+
+TEST(Additionstest, EinsUndDrei)
+{
+	ASSERT_EQ( 1+3, 4 );
+	ASSERT_NE( 1+3, 5 );
 }
