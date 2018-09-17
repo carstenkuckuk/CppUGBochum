@@ -13,5 +13,9 @@ install(
 	COMPONENT Applications
 )
 
+# Fuer Linux brauchen wir noch das hier:
+set(CPACK_PACKAGE_CONTACT "Erika Mustermann")
+
+
 # Und wir sagen CMake, daß wir einen Installer bauen wollen:
 include(CPack)
