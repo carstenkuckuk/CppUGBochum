@@ -31,3 +31,9 @@ TEST(Additionstest, EinsUndDrei)
 	ASSERT_EQ( 1+3, 4 );
 	ASSERT_NE( 1+3, 5 );
 }
+
+TEST(Additionstest, EinsUndVier)
+{
+	ASSERT_EQ( 1+4, 5 );
+	ASSERT_NE( 1+4, 6 );
+}
