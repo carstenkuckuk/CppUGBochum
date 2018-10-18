@@ -5,6 +5,6 @@
 
 int main(int nArgs, char **rgszArgs)
 {
-	std::cout << "Hello World!" << std::endl << std::flush;
+	std::cout << "Hello World!" << std::endl;
 	return 0;
 }
