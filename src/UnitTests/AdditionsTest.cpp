@@ -50,3 +50,10 @@ TEST(Additionstest, EinsUndSechs)
 	ASSERT_EQ( 1+6, 7 );
 	ASSERT_NE( 1+6, 8 );
 }
+
+
+
+TEST(Additionstest, EinsUndSieben)
+{
+	ASSERT_EQ(88888, 1+7);
+}
