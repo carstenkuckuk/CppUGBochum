@@ -40,6 +40,6 @@ TEST(Additionstest, EinsUndVier)
 
 TEST(Additionstest, EinsUndFuenf)
 {
-	ASSERT_EQ( 1+5, 6 );
-	ASSERT_NE( 1+5, 7 );
+	ASSERT_EQ( 1+5, 66 );
+	ASSERT_NE( 1+5, 77 );
 }
