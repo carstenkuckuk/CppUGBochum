@@ -11,6 +11,11 @@ pipeline {
 				echo 'Building..'
 				bat './build.bat'
 			}
+			post {
+				always {
+					junit "working/bin/Release/*xml"
+				}
+			}
 		}
 		stage('Test') {
 			steps {
